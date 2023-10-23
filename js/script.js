@@ -52,9 +52,22 @@ for (let i = 0; i < ourTeam.length; i++){
     console.log(ourTeam[i].role);
     console.log(ourTeam[i].picture);
     console.groupEnd()
+    displayCard(ourTeam[i]);
+
 }
 
-function displayCard(){
+function displayCard(infoTeam){
     const rowCard = document.querySelector(".row");
-    console.log(rowCard);
+    const colCard = `
+    <div class="col-4">
+        <div class="card" style="width: 18rem;">
+            <img src="${infoTeam.picture}" class="card-img-top" alt="member team">
+            <div class="card-body">
+                <h5 class="card-title">${infoTeam.name}</h5>
+                <p class="card-text">${infoTeam.role}</p>
+            </div>
+        </div>
+    </div>
+    `
+    rowCard.innerHTML += colCard;
 }
