@@ -1,5 +1,6 @@
 "use strict";
 
+// creazione array
 const ourTeam = [
     {
         name: "Wayne Barnett ",
@@ -32,3 +33,12 @@ const ourTeam = [
         picture: "img/barbara-ramos-graphic-designer.jpg"
     }
 ]
+
+// stampo in concole per ogni membro del team le sue info
+for (let i = 0; ourTeam.length; i++){
+    console.group("Informazioni membro team");
+    console.log(ourTeam[i].name);
+    console.log(ourTeam[i].role);
+    console.log(ourTeam[i].picture);
+    console.groupEnd()
+}
