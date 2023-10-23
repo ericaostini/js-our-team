@@ -84,5 +84,9 @@ btn.addEventListener("click", function(){
         name: document.getElementById("name").value,
         role: document.getElementById("role").value,
         picture: document.getElementById("picture").value,
-    }
+    };
+    console.log(newMember);
+    ourTeam.push(newMember);
+    console.log(newMember);
+    displayCard(newMember);
 })
