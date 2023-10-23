@@ -59,8 +59,8 @@ for (let i = 0; i < ourTeam.length; i++){
 function displayCard(infoTeam){
     const rowCard = document.querySelector(".row");
     const colCard = `
-    <div class="col-4">
-        <div class="card" style="width: 18rem;">
+    <div class="col">
+        <div class="card text-center">
             <img src="${infoTeam.picture}" class="card-img-top" alt="member team">
             <div class="card-body">
                 <h5 class="card-title">${infoTeam.name}</h5>
