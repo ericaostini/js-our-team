@@ -1,5 +1,16 @@
 "use strict";
 
+/* creazione card info membri team
+<div class="col-4">
+    <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Name</h5>
+            <p class="card-text">Role</p>
+        </div>
+    </div>
+</div>
+*/
 // creazione array
 const ourTeam = [
     {
@@ -35,10 +46,15 @@ const ourTeam = [
 ]
 
 // stampo in concole per ogni membro del team le sue info
-for (let i = 0; ourTeam.length; i++){
+for (let i = 0; i < ourTeam.length; i++){
     console.group("Informazioni membro team");
     console.log(ourTeam[i].name);
     console.log(ourTeam[i].role);
     console.log(ourTeam[i].picture);
     console.groupEnd()
+}
+
+function displayCard(){
+    const rowCard = document.querySelector(".row");
+    console.log(rowCard);
 }
