@@ -80,7 +80,9 @@ function displayCard(infoTeam){
 const btn = document.querySelector("button");
 // console.log(btn);
 btn.addEventListener("click", function(){
-    let newName = document.getElementById("name").value;
-    let newRole = document.getElementById("role").value;
-    let newPicture = document.getElementById("picture").value;
+    const newMember = {
+        name: document.getElementById("name").value,
+        role: document.getElementById("role").value,
+        picture: document.getElementById("picture").value,
+    }
 })
