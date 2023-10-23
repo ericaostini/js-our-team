@@ -63,8 +63,8 @@ for (let i = 0; i < ourTeam.length; i++){
 function displayCard(infoTeam){
     const rowCard = document.querySelector(".row");
     const colCard = `
-    <div class="col">
-        <div class="card text-center mb-4">
+    <div class="col pt-4">
+        <div class="card border-secondary text-secondary text-center mb-4">
             <img src="${infoTeam.picture}" class="card-img-top" alt="member team">
             <div class="card-body">
                 <h5 class="card-title">${infoTeam.name}</h5>
