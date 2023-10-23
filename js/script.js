@@ -85,8 +85,17 @@ btn.addEventListener("click", function(){
         role: document.getElementById("role").value,
         picture: document.getElementById("picture").value,
     };
-    console.log(newMember);
+    //console.log(newMember);
     ourTeam.push(newMember);
-    console.log(newMember);
+    //console.log(newMember);
     displayCard(newMember);
+    resetInput();
 })
+
+function resetInput(){
+    const newMember = {
+        name: document.getElementById("name").value = " ",
+        role: document.getElementById("role").value = " ",
+        picture: document.getElementById("picture").value = " ",
+    };
+}
