@@ -76,3 +76,11 @@ function displayCard(infoTeam){
     rowCard.innerHTML += colCard;
 }
 
+//inserire nuovo membro al team
+const btn = document.querySelector("button");
+// console.log(btn);
+btn.addEventListener("click", function(){
+    let newName = document.getElementById("name").value;
+    let newRole = document.getElementById("role").value;
+    let newPicture = document.getElementById("picture").value;
+})
